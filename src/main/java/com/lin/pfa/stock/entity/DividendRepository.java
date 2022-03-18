@@ -1,4 +1,4 @@
-package com.linh.pfa.stock.entity;
+package com.lin.pfa.stock.entity;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;

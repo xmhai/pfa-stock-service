@@ -1,4 +1,4 @@
-package com.linh.pfa.stock.service;
+package com.lin.pfa.stock.service;
 
 import java.math.BigDecimal;
 import java.util.ArrayList;
@@ -10,11 +10,11 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
-import com.linh.pfa.stock.entity.PortfolioEntity;
-import com.linh.pfa.stock.entity.PortfolioRepository;
-import com.linh.pfa.stock.entity.ProfitEntity;
-import com.linh.pfa.stock.entity.ProfitRepository;
-import com.linh.pfa.stock.entity.StockEntity;
+import com.lin.pfa.stock.entity.PortfolioEntity;
+import com.lin.pfa.stock.entity.PortfolioRepository;
+import com.lin.pfa.stock.entity.ProfitEntity;
+import com.lin.pfa.stock.entity.ProfitRepository;
+import com.lin.pfa.stock.entity.StockEntity;
 
 @Service
 public class ProfitService {

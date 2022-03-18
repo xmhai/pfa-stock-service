@@ -1,8 +1,8 @@
-package com.linh.pfa.stock.util;
+package com.lin.pfa.stock.util;
 
 import org.springframework.stereotype.Service;
 
-import com.linh.pfa.stock.entity.StockEntity;
+import com.lin.pfa.stock.entity.StockEntity;
 
 @Service
 public class SiHtmlStockPriceRetriever extends HtmlStockPriceRetriever {

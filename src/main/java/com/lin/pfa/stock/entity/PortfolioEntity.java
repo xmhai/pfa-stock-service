@@ -1,4 +1,4 @@
-package com.linh.pfa.stock.entity;
+package com.lin.pfa.stock.entity;
 
 import java.math.BigDecimal;
 
@@ -16,7 +16,7 @@ import lombok.NoArgsConstructor;
 import lombok.Setter;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
-import com.linh.common.base.BaseEntity;
+import com.lin.common.base.BaseEntity;
 
 @Entity(name="portfolio")
 @SQLDelete(sql = "UPDATE portfolio SET is_deleted = 1 WHERE id = ?")

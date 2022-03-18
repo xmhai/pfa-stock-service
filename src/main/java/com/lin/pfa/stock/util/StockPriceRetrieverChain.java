@@ -1,4 +1,4 @@
-package com.linh.pfa.stock.util;
+package com.lin.pfa.stock.util;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -8,7 +8,7 @@ import javax.annotation.PostConstruct;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import com.linh.pfa.stock.entity.StockEntity;
+import com.lin.pfa.stock.entity.StockEntity;
 
 @Service
 public class StockPriceRetrieverChain {

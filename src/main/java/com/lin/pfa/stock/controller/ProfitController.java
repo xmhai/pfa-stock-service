@@ -1,4 +1,4 @@
-package com.linh.pfa.stock.controller;
+package com.lin.pfa.stock.controller;
 
 import java.util.List;
 import java.util.Map;
@@ -16,9 +16,9 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.linh.pfa.stock.entity.ProfitEntity;
-import com.linh.pfa.stock.entity.ProfitRepository;
-import com.linh.pfa.stock.service.ProfitService;
+import com.lin.pfa.stock.entity.ProfitEntity;
+import com.lin.pfa.stock.entity.ProfitRepository;
+import com.lin.pfa.stock.service.ProfitService;
 
 @RestController
 @RequestMapping("/profits")

@@ -1,4 +1,4 @@
-package com.linh.pfa.stock.entity;
+package com.lin.pfa.stock.entity;
 
 import java.util.List;
 

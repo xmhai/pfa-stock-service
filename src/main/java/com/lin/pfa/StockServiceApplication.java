@@ -1,4 +1,4 @@
-package com.linh.pfa;
+package com.lin.pfa;
 
 import java.io.File;
 import java.io.IOException;
@@ -25,7 +25,7 @@ import org.springframework.web.servlet.config.annotation.CorsRegistry;
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
 
 @SpringBootApplication
-@ComponentScan(basePackages = "com.linh")
+@ComponentScan(basePackages = "com.lin")
 @EnableCaching
 public class StockServiceApplication {
 

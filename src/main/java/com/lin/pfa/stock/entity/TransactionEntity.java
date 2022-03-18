@@ -1,4 +1,4 @@
-package com.linh.pfa.stock.entity;
+package com.lin.pfa.stock.entity;
 
 import java.math.BigDecimal;
 import java.time.LocalDate;
@@ -16,8 +16,8 @@ import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 
-import com.linh.common.base.BaseEntity;
-import com.linh.pfa.common.enums.Action;
+import com.lin.common.base.BaseEntity;
+import com.lin.pfa.common.enums.Action;
 
 @Entity(name="transaction")
 @SQLDelete(sql = "UPDATE transaction SET is_deleted = 1 WHERE id = ?")

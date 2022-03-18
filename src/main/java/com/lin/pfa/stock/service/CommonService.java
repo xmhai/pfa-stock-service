@@ -1,4 +1,4 @@
-package com.linh.pfa.stock.service;
+package com.lin.pfa.stock.service;
 
 import java.math.BigDecimal;
 import java.util.List;
@@ -11,7 +11,7 @@ import org.springframework.core.ParameterizedTypeReference;
 import org.springframework.stereotype.Service;
 import org.springframework.web.client.RestTemplate;
 
-import com.linh.pfa.api.common.Currency;
+import com.lin.pfa.api.common.Currency;
 
 import static org.springframework.http.HttpMethod.GET;
 

@@ -1,4 +1,4 @@
-package com.linh.pfa.stock.controller;
+package com.lin.pfa.stock.controller;
 
 import java.math.BigDecimal;
 import java.util.List;
@@ -19,9 +19,9 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.linh.pfa.stock.entity.StockEntity;
-import com.linh.pfa.stock.entity.StockRepository;
-import com.linh.pfa.stock.service.StockService;
+import com.lin.pfa.stock.entity.StockEntity;
+import com.lin.pfa.stock.entity.StockRepository;
+import com.lin.pfa.stock.service.StockService;
 
 
 @RestController

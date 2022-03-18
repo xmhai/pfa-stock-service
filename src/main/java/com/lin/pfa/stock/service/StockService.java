@@ -1,4 +1,4 @@
-package com.linh.pfa.stock.service;
+package com.lin.pfa.stock.service;
 
 import java.math.BigDecimal;
 import java.time.Duration;
@@ -9,11 +9,12 @@ import javax.transaction.Transactional;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-import com.linh.pfa.stock.entity.PortfolioEntity;
-import com.linh.pfa.stock.entity.PortfolioRepository;
-import com.linh.pfa.stock.entity.StockEntity;
-import com.linh.pfa.stock.entity.StockRepository;
-import com.linh.pfa.stock.util.StockPriceRetrieverChain;
+
+import com.lin.pfa.stock.entity.PortfolioEntity;
+import com.lin.pfa.stock.entity.PortfolioRepository;
+import com.lin.pfa.stock.entity.StockEntity;
+import com.lin.pfa.stock.entity.StockRepository;
+import com.lin.pfa.stock.util.StockPriceRetrieverChain;
 
 @Service
 public class StockService {

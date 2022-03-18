@@ -1,4 +1,4 @@
-package com.linh.pfa.stock.controller;
+package com.lin.pfa.stock.controller;
 
 import java.math.BigDecimal;
 import java.util.HashMap;
@@ -18,10 +18,10 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.linh.pfa.common.enums.Category;
-import com.linh.pfa.stock.entity.PortfolioEntity;
-import com.linh.pfa.stock.entity.PortfolioRepository;
-import com.linh.pfa.stock.service.PortfolioService;
+import com.lin.pfa.common.enums.Category;
+import com.lin.pfa.stock.entity.PortfolioEntity;
+import com.lin.pfa.stock.entity.PortfolioRepository;
+import com.lin.pfa.stock.service.PortfolioService;
 
 @RestController
 @RequestMapping("/portfolios")

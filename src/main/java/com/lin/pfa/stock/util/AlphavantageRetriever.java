@@ -1,4 +1,4 @@
-package com.linh.pfa.stock.util;
+package com.lin.pfa.stock.util;
 
 import java.time.Duration;
 import java.time.LocalDateTime;
@@ -8,8 +8,8 @@ import org.springframework.stereotype.Service;
 import org.springframework.web.client.RestTemplate;
 
 import com.jayway.jsonpath.JsonPath;
-import com.linh.pfa.common.enums.Exchange;
-import com.linh.pfa.stock.entity.StockEntity;
+import com.lin.pfa.common.enums.Exchange;
+import com.lin.pfa.stock.entity.StockEntity;
 
 import antlr.StringUtils;
 

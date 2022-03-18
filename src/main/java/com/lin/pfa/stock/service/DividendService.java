@@ -1,4 +1,4 @@
-package com.linh.pfa.stock.service;
+package com.lin.pfa.stock.service;
 
 import java.math.BigDecimal;
 import java.util.List;
@@ -8,10 +8,10 @@ import javax.transaction.Transactional;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import com.linh.pfa.stock.entity.DividendEntity;
-import com.linh.pfa.stock.entity.DividendRepository;
-import com.linh.pfa.stock.entity.ProfitEntity;
-import com.linh.pfa.stock.entity.ProfitRepository;
+import com.lin.pfa.stock.entity.DividendEntity;
+import com.lin.pfa.stock.entity.DividendRepository;
+import com.lin.pfa.stock.entity.ProfitEntity;
+import com.lin.pfa.stock.entity.ProfitRepository;
 
 @Service
 public class DividendService {

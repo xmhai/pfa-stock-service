@@ -1,4 +1,4 @@
-package com.linh.pfa.stock.entity;
+package com.lin.pfa.stock.entity;
 
 import java.math.BigDecimal;
 
@@ -14,10 +14,10 @@ import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 
-import com.linh.common.base.BaseEntity;
-import com.linh.pfa.common.enums.Category;
-import com.linh.pfa.common.enums.Currency;
-import com.linh.pfa.common.enums.Exchange;
+import com.lin.common.base.BaseEntity;
+import com.lin.pfa.common.enums.Category;
+import com.lin.pfa.common.enums.Currency;
+import com.lin.pfa.common.enums.Exchange;
 
 @Entity(name="stock")
 @SQLDelete(sql = "UPDATE stock SET is_deleted = 1 WHERE id = ?")

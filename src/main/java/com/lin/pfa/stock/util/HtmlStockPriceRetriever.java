@@ -1,4 +1,4 @@
-package com.linh.pfa.stock.util;
+package com.lin.pfa.stock.util;
 
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
@@ -6,7 +6,7 @@ import java.net.URL;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-import com.linh.pfa.stock.entity.StockEntity;
+import com.lin.pfa.stock.entity.StockEntity;
 
 public abstract class HtmlStockPriceRetriever implements StockPriceRetriever {
 	private String url;

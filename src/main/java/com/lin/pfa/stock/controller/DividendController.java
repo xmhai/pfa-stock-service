@@ -1,4 +1,4 @@
-package com.linh.pfa.stock.controller;
+package com.lin.pfa.stock.controller;
 
 import java.util.List;
 
@@ -15,9 +15,9 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.linh.pfa.stock.entity.DividendEntity;
-import com.linh.pfa.stock.entity.DividendRepository;
-import com.linh.pfa.stock.service.DividendService;
+import com.lin.pfa.stock.entity.DividendEntity;
+import com.lin.pfa.stock.entity.DividendRepository;
+import com.lin.pfa.stock.service.DividendService;
 
 @RestController
 @RequestMapping("/dividends")
