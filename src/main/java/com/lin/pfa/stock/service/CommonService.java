@@ -24,7 +24,7 @@ public class CommonService {
 	private String commonServiceUrl;
 
 	public Map<Long, BigDecimal> getExchangeRate() {
-		List<Currency> list = restTemplate.exchange(commonServiceUrl, GET, null,
+		List<Currency> list = restTemplate.exchange(commonServiceUrl+"/config/currencies", GET, null,
 				new ParameterizedTypeReference<List<Currency>>() {}).getBody();
 
 	    Map<Long, BigDecimal> currencies = list.stream()
