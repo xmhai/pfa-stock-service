@@ -8,7 +8,7 @@ import com.lin.pfa.stock.entity.StockEntity;
 public class SiHtmlStockPriceRetriever extends HtmlStockPriceRetriever {
 	SiHtmlStockPriceRetriever () {
 		String u = "https://www.shareinvestor.com/fundamental/factsheet.html?counter=%s";
-		String p = "Last \\(SGD\\): \\<strong\\>(.*?)\\<\\/strong\\>"; 
+		String p = "Last \\((SGD|HKD)\\): \\<strong\\>(.*?)\\<\\/strong\\>"; 
 		setUrl(u, p);
 	}
 	
@@ -20,6 +20,8 @@ public class SiHtmlStockPriceRetriever extends HtmlStockPriceRetriever {
 	public static void main (String[] args) {
 		SiHtmlStockPriceRetriever r = new SiHtmlStockPriceRetriever();
 		StockEntity stock = new StockEntity();
+		stock.setCode("1810.HK");
+		System.out.println(r.getPrice(stock));
 		stock.setCode("D05.SI");
 		System.out.println(r.getPrice(stock));
 	}

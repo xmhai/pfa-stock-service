@@ -33,7 +33,7 @@ public class StockController {
 	private StockRepository stockRespository;
 	
 	@GetMapping("")
-	@Cacheable("stocks")
+	//@Cacheable("stocks")
 	public List<StockEntity> getStocks() {
 		return stockRespository.findAll(Sort.by(Sort.Direction.ASC, "name"));
 	}
@@ -50,14 +50,14 @@ public class StockController {
 
 	@PostMapping("")
 	@Transactional
-    @CacheEvict(value = "stocks", allEntries = true)
+    //@CacheEvict(value = "stocks", allEntries = true)
 	public ResponseEntity<StockEntity> create(@RequestBody StockEntity stock) {
 		return ResponseEntity.ok(stockService.create(stock));
 	}
 
     @PutMapping("/{id}")
 	@Transactional
-    @CacheEvict(value = "stocks", allEntries = true)
+    //@CacheEvict(value = "stocks", allEntries = true)
     public ResponseEntity<StockEntity> update(@PathVariable Long id, @RequestBody StockEntity stock) {
     	StockEntity stockOld = stockRespository.findById(id).orElse(null);
         if (stockOld == null) {
@@ -68,7 +68,7 @@ public class StockController {
     }
 
     @DeleteMapping("/{id}")
-    @CacheEvict(value = "stocks", allEntries = true)
+    //@CacheEvict(value = "stocks", allEntries = true)
     public ResponseEntity delete(@PathVariable Long id) {
     	StockEntity stock = stockRespository.findById(id).orElse(null);
         if (stock == null) {
@@ -80,14 +80,14 @@ public class StockController {
     }
 
     @PutMapping("/refresh/price")
-    @CacheEvict(value = "stocks", allEntries = true)
+    //@CacheEvict(value = "stocks", allEntries = true)
     public ResponseEntity<Double> refreshPrice() {
     	stockService.refreshPrice();
         return ResponseEntity.ok().build();
     }
 
     @PutMapping("/refresh/price/{id}")
-    @CacheEvict(value = "stocks", allEntries = true)
+    //@CacheEvict(value = "stocks", allEntries = true)
     public ResponseEntity<Double> refreshPrice(@PathVariable Long id) {
     	StockEntity stock = stockRespository.findById(id).orElse(null);
         if (!stockRespository.findById(id).isPresent()) {

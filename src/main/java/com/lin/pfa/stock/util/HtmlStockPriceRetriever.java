@@ -36,7 +36,7 @@ public abstract class HtmlStockPriceRetriever implements StockPriceRetriever {
 
         String value = "0.00";
         if (m.find( )) {
-        	value = m.group(1); // group 0 is the whole matching!!!
+        	value = m.group(2); // group 0 is the whole matching!!!
 		}
 
         return Double.parseDouble(value);
