@@ -8,6 +8,7 @@ import javax.annotation.PostConstruct;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import com.lin.pfa.common.enums.Exchange;
 import com.lin.pfa.stock.entity.StockEntity;
 
 @Service
@@ -28,6 +29,13 @@ public class StockPriceRetrieverChain {
 	}
 	
 	public double getPrice(StockEntity stock) {
+		if (stock.getExchange()==Exchange.HKEX || stock.getExchange()==Exchange.SGX) {
+			return siHtmlStockPriceRetriever.getPrice(stock);
+		} else {
+			return alphavantageRetriever.getPrice(stock);
+		}
+
+		/*
 		for (StockPriceRetriever retriever : retrievers) {
 			System.out.println("Stock:" + stock.getCode());
 			double price = retriever.getPrice(stock);
@@ -37,5 +45,6 @@ public class StockPriceRetrieverChain {
 			}
 		}
 		return 0;
+		*/
 	}
 }
