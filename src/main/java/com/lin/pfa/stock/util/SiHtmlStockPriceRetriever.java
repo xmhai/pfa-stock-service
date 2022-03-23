@@ -2,6 +2,7 @@ package com.lin.pfa.stock.util;
 
 import org.springframework.stereotype.Service;
 
+import com.lin.pfa.common.enums.Exchange;
 import com.lin.pfa.stock.entity.StockEntity;
 
 @Service
@@ -14,7 +15,13 @@ public class SiHtmlStockPriceRetriever extends HtmlStockPriceRetriever {
 	
 	@Override
     public String getStockCode(StockEntity stock) {
-        return stock.getCode();
+		String code = stock.getCode(); 
+        // Format stock code 
+		if (stock.getExchange()==Exchange.HKEX) {
+				code = code + ".HK";
+		}
+		
+        return code;
     }
 	
 	public static void main (String[] args) {
